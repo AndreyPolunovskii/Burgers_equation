@@ -1,0 +1,6 @@
+col_frame1 = 8
+T1 = 2
+NUMBER_GR = 10
+frame_cadr = 6
+wall_left_gr = 3.14159
+wall_right_gr = 6.28319

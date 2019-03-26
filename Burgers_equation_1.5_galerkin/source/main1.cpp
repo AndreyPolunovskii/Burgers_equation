@@ -1,0 +1,44 @@
+#include "solve_ser.h"
+
+
+//long double -не берет,пишет -core doumpt
+
+int main()
+{
+
+system("cp /dev/null output_data1.txt");//чистим файл перед прочитыванием
+system("cp /dev/null output_data2.txt");
+system("cp /dev/null vars.txt");
+system("cp /dev/null logfile.log");
+
+cout <<"длина отрезка интегрирования (по времени): " << T  <<" " << endl;
+cout <<"количество расчетных точек по времени: " << col_point << endl;
+cout <<"считаем" << endl;
+
+
+fstream outdata1("output_data1.txt");
+fstream outdata2("output_data2.txt");
+fstream outvar("vars.txt");
+
+
+
+
+if (solver_ser1(outdata1,outdata2,outvar))
+   {
+     cout << "выход без создания графиков" << endl;
+     return 0;
+    }
+
+
+outdata1.close();
+outdata2.close();
+outvar.close();
+
+if (!system("./plot_command.gnu "))
+  {
+   cout << endl;
+   cout << "в папке graphics созданы файлы с графиками X.eps, "<< "\n" <<"graph_moment.gif и animate.gif" <<endl;
+  }
+
+
+}

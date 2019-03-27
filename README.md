@@ -12,7 +12,7 @@ To run any of these programs in the root folder there is an executive file RUN
 
 Run it, and the calculation will start.
 
-./RUN
+     ./RUN
 
 
 

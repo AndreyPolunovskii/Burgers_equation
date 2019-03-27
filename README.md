@@ -13,4 +13,4 @@ Run it, and the calculation will start.
 ./RUN
 
 
-![animate](https://user-images.githubusercontent.com/48961982/55070493-71245100-5097-11e9-9695-8271d6d031b7.gif)
+![smiley](https://user-images.githubusercontent.com/48961982/55070493-71245100-5097-11e9-9695-8271d6d031b7.gif){:height="36px" width="36px"}.

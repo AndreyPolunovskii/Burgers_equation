@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/include_files.h
+fstream
+-
+iostream
+-
+string
+-
+vector
+-
+cmath
+-
+cstdlib
+-
+math.h
+-
+ctime
+-
+omp.h
+-
+iterator
+-
+algorithm
+-
+iomanip
+-
+
+../include/solver_file.h
+
+/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/main.cpp
+include_files.h
+/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/include_files.h
+solver_file.h
+/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/solver_file.h
+

@@ -1,0 +1,3 @@
+/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/rebuild_cache.dir
+/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/run_file.dir
+/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/edit_cache.dir

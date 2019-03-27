@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4201c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4201c.dir/build.make CMakeFiles/cmTC_4201c.dir/build
+make[1]: вход в каталог «/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_4201c.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_4201c.dir/CheckSymbolExists.cxx.o -c /home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_4201c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4201c.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_4201c.dir/CheckSymbolExists.cxx.o  -o cmTC_4201c 
+CMakeFiles/cmTC_4201c.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4201c.dir/build.make:97: recipe for target 'cmTC_4201c' failed
+make[1]: *** [cmTC_4201c] Error 1
+make[1]: выход из каталога «/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CMakeTmp»
+Makefile:126: recipe for target 'cmTC_4201c/fast' failed
+make: *** [cmTC_4201c/fast] Error 2
+
+File /home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_03eb2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_03eb2.dir/build.make CMakeFiles/cmTC_03eb2.dir/build
+make[1]: вход в каталог «/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_03eb2.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_03eb2.dir/CheckFunctionExists.cxx.o -c /home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_03eb2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03eb2.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_03eb2.dir/CheckFunctionExists.cxx.o  -o cmTC_03eb2 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_03eb2.dir/build.make:97: recipe for target 'cmTC_03eb2' failed
+make[1]: *** [cmTC_03eb2] Error 1
+make[1]: выход из каталога «/home/andrey/myprogram/Burgers_equation/Burgers_equation_MKR_GPU/build/CMakeFiles/CMakeTmp»
+Makefile:126: recipe for target 'cmTC_03eb2/fast' failed
+make: *** [cmTC_03eb2/fast] Error 2
+
+

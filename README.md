@@ -11,3 +11,6 @@ To run any of these programs in the root folder there is an executive file RUN
 Run it, and the calculation will start.
 
 ./RUN
+
+
+https://user-images.githubusercontent.com/48961982/55070194-c57b0100-5096-11e9-9b96-24b6b171498e.gif

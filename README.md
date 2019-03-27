@@ -1,6 +1,8 @@
 # Burgers' equation
 This repository is dedicated to solving the Burgers' equation by various numerical methods.
 
+All programs using openMP for parallel calculating.
+
 REQUIRED:
 For the work of these programs, must be installed gnuplot and compiler GCC  are required version not lower than 4.2.
 

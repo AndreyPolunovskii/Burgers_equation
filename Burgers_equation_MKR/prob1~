@@ -1,0 +1,5 @@
+#!/bin/bash
+
+direct=`pwd`
+
+cp $direct/PARAMETERS.h $direct/source/

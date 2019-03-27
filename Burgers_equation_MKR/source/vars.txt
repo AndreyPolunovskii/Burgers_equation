@@ -1,0 +1,6 @@
+col_frame1 = 200
+T1 = 1
+NUMBER_GR = 10
+frame_cadr = 2
+wall_left_gr = 0
+wall_right_gr = 0.999

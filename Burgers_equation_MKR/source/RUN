@@ -1,0 +1,9 @@
+#!/bin/sh
+
+export OMP_NUM_THREADS=12 #число потоков 
+
+g++ -c   main1.cpp solver_file.cpp  -fopenmp -lmpfr -lgmp -std=c++11 
+g++   solver_file.o main1.o  -o solve1 -fopenmp -lmpfr -lgmp -std=c++11 
+rm -f *.o
+
+./solve1

@@ -1,0 +1,48 @@
+#!/bin/sh
+
+export OMP_NUM_THREADS=12 #число потоков 
+
+#копируем наш заголовочный файл
+direct=`pwd`
+cp -f $direct/PARAMETERS.h $direct/source/
+
+#удаляем старый проект
+rm -R -f project 
+
+
+cd $direct/source/
+
+#компилируем программу
+g++ -fopenmp -c solver_ser.cpp main1.cpp
+g++ -fopenmp  main1.o solver_ser.o -o solve1 
+rm -f *.o 
+
+
+#запускаем с выводом в лог-файл
+./solve1 | tee -a logfile.log
+
+
+#перемещаем по созданным нужным папкам полученные файлы
+
+cd $direct
+
+mkdir project
+mkdir project/data
+mkdir project/graphics
+mkdir project/log
+mkdir project/bin
+
+mv -f $direct/source/output_data1.txt $direct/project/data/
+mv -f $direct/source/output_data2.txt $direct/project/data/
+
+mv -f $direct/source/X.eps $direct/project/graphics/
+mv -f $direct/source/animate.gif $direct/project/graphics/
+mv -f $direct/source/graph_moment.gif $direct/project/graphics/
+
+mv -f $direct/source/logfile.log $direct/project/log/
+
+mv -f $direct/source/solve1 $direct/project/bin/
+
+mv -f $direct/source/PARAMETERS.h $direct/project/
+
+

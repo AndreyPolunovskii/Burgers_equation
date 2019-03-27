@@ -1,0 +1,53 @@
+#include "include_files.h"
+#include "PARAMETRS.h"
+
+
+//---------------------------
+template<typename T1>
+inline T1 sum_pr(T1 * SX1,T1 * SX2,int N);
+//--------------------------
+
+
+template<typename T2>
+inline bool vector_clear_but_first(T2 * SX);
+//----------------------------
+
+inline scalar inifunct(size_t &la);
+//---------------------------
+
+template<class T2>
+inline T2 find_max(T2 **  SX);
+//--------------------------
+
+template<typename T2>
+inline T2 find_min_rad(T2 ** SX,int n_t);
+//--------------------------
+
+template<typename T2>
+T2 eutken_transform( T2 * SX, T2 z);
+//----------------------------
+
+template<typename T2>
+inline T2 series_create(T2 * SX,T2 t);
+//-----------------------------
+
+template<typename T2>
+inline T2 app_pade_1_2(T2 * SX, T2 z);
+//---------------------------
+
+template<typename T2>
+inline T2 app_pade_2_2(T2 * SX, T2 z);
+//---------------------------
+
+template<typename T2>
+inline T2 app_pade_2_1(T2 * SX, T2 z);
+//---------------------------
+
+template<typename T2>
+inline T2 app_pade_3_1(T2 * SX, T2 z);
+//---------------------------
+
+template<typename T2>
+inline T2 app_pade_3_3(T2 * SX, T2 z);
+//---------------------------
+

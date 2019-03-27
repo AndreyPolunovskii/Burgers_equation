@@ -16,4 +16,4 @@ Run it, and the calculation will start.
 
 
 
-<a href="url"><img src="https://user-images.githubusercontent.com/48961982/55071520-eee95c00-5099-11e9-8389-dccbaecb822c.gif" align="center" height="628" width="628" ></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/48961982/55071520-eee95c00-5099-11e9-8389-dccbaecb822c.gif" align="justify" height="628" width="628" ></a>

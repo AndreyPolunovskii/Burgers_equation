@@ -47,7 +47,7 @@ file2.precision(15);
       #pragma omp parallel for
       for (size_t i=0 ; i <= ORDER_SER; ++i)
       {
-        matrix_series[0][i] = 0;
+        matrix_series[0][i] = 1;
         matrix_series[col_space_point-1][i] = 0;
       }
      

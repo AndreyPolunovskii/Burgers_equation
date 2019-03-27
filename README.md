@@ -14,4 +14,4 @@ Run it, and the calculation will start.
 
 
 
-<a href="url"><img src="https://user-images.githubusercontent.com/48961982/55070493-71245100-5097-11e9-9695-8271d6d031b7.gif" align="left" height="128" width="128" ></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/48961982/55070493-71245100-5097-11e9-9695-8271d6d031b7.gif" align="left" height="528" width="528" ></a>
